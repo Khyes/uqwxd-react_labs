@@ -75,6 +75,7 @@ return(
   <h1>Todo List</h1>
   <form onSubmit={handleSubmit}>
     <input
+      placeholder="Enter a task"
       type="text"
       id = 'todoAdd'
     />
@@ -101,6 +102,7 @@ return(
         (<div>{todo.text}</div>)
       }
     </div>
+    <div className="divider"></div>
     <div className="todo-actions">
       {/* if it is edit mode, allow submit edit, else allow edit */}
       {todo.id === todoEditing ?
